@@ -1,0 +1,14 @@
+﻿  Player2.cpp
+  Player2F.cpp
+  main.cpp
+c:\users\itus9\onedrive\escritorio\recus\programación\garciaalbert_ar2\tag\tag\main.cpp(39): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+c:\users\itus9\onedrive\escritorio\recus\programación\garciaalbert_ar2\tag\tag\main.cpp(219): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\itus9\onedrive\escritorio\recus\programación\garciaalbert_ar2\tag\tag\main.cpp(228): warning C4244: '+=': conversión de '_Rep' a 'float'; posible pérdida de datos
+          with
+          [
+              _Rep=double
+          ]
+c:\users\itus9\onedrive\escritorio\recus\programación\garciaalbert_ar2\tag\tag\main.cpp(49): warning C4101: 'aux': variable local sin referencia
+c:\users\itus9\onedrive\escritorio\recus\programación\garciaalbert_ar2\tag\tag\main.cpp(50): warning C4101: 'aux2': variable local sin referencia
+  Generando código...
+  TAG.vcxproj -> C:\Users\itus9\OneDrive\Escritorio\Recus\Programación\GarciaAlbert_AR2\TAG\x64\Debug\TAG.exe
