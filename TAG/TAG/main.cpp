@@ -11,6 +11,7 @@
 #include <time.h>
 #include <ctime>
 
+#define CLOCKS_PER_SEC ((clock_t)1000)
 Player2F player2F;
 Map map;
 Player player;
@@ -190,7 +191,7 @@ int main(int argc, char**argv)
 					player2.movePlayer2(Movement::RIGHT, map.map);
 					player2F.movePlayer2F(Movement::LEFT, map.map);
 				}
-				//uUPDATE
+				//UPDATE
 				if (player2.newGame) {
 					player2.newGame = false;
 					lifes--;
@@ -221,8 +222,8 @@ int main(int argc, char**argv)
 					actualState = GameState::RANKING;
 				}
 
-				
-
+				//FRAME CONTROL
+				Sleep(sleepValue);
 				auto frameEnd = std::chrono::system_clock::now();
 				frametime = frameEnd - frameStart;
 				playTime += frametime.count();
@@ -233,8 +234,8 @@ int main(int argc, char**argv)
 				map.updateBoard();
 				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 5);
 				std::cout << "LIFES: " << lifes << std::endl;
-				//FRAME CONTROL
-				Sleep(sleepValue);
+				
+			
 			}
 			break;
 		case GameState::PAUSE:
